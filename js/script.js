@@ -23,4 +23,5 @@ function findStreet() {
   return
 }
 
+// Connect Button click to Find Street Function
 findStreetBtn.onclick = findStreet;
