@@ -1,5 +1,26 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
-//
-// Created by: Mr. Coxall
-// Created on: Sep 2020
-// This file contains the JS functions for index.html
+// Find Street Script
+
+const streetNumberInput = document.getElementById('streetNumberInput');
+const streetNameInput = document.getElementById('streetNameInput');
+const findStreetBtn = document.getElementById('findStreetBtn');
+
+// Display
+const resultDisplay = document.getElementById('resultDisplay');
+
+// Function to Find Street
+function findStreet() {
+
+  // Get Inputs
+  let streetNumber = streetNumberInput.value;
+  let streetName = streetNameInput.value;
+
+  // Construct Address
+  let streetAddress = "" + streetNumber + " " + streetName
+
+  // Display Address on Display Element
+  resultDisplay.innerText = streetAddress
+
+  return
+}
+
+findStreetBtn.onclick = findStreet;

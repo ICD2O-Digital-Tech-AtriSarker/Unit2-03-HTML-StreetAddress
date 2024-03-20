@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+
+<head>
+  <!-- Meta data section -->
+  <meta charset="utf-8">
+  <meta name="description" content="Street Address Finder">
+  <meta name="keywords" content="immaculata, icd2o">
+  <meta name="author" content="Atri Sarker">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+  <link rel="manifest" href="./fav_index/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Title -->
+  <title>Street Address Finder</title>
+</head>
+
+<body>
+  <!-- Script -->
+  <script defer src="./js/script.js"></script>
+
+  <!-- Header -->
+  <h1>Street Address Finder</h1>
+
+  <!-- Input Fields | Street Number, Street Name-->
+  <label for="length">Street Number:</label>
+  <input id="streetNumberInput" type="number" name="length" placeholder="Street Number">
+  <br>
+  <label for="width">Street Name:</label>
+  <input id="streetNameInput" type="text" name="width" placeholder="Street Name">
+  <br>
+
+  <!-- Find Street Button -->
+  <button id="findStreetBtn" >Find Street!</button>
+
+  <!-- Results -->
+  <h3>Street Address is shown here:</h3>
+  <h2 id="resultDisplay">||</h2>
+</body>
+
 </html>
